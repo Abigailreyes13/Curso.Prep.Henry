@@ -1,0 +1,29 @@
+h1 {
+color: rgb(118, 186, 118);
+}
+
+img {
+width: 400px;
+}
+
+#thirdDiv {
+width: 100%px;
+ height: 600px;
+background-color: rgb(44, 97, 44);
+padding: 50px;
+border: solid 5px;
+border-bottom-color: blue;
+border-right-color: rgb(169, 172, 27);
+}
+
+#spanId {
+font-size: 18px;
+margin: 50px;
+}
+div {
+
+    background-color: rgb(178, 196, 192);
+    
+        display: grid;
+        place-items: center;
+}
