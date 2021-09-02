@@ -1,6 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 const { default: simpleGit } = require("simple-git");
+const { CONFIG_ERROR_UNKNOWN_OPTION } = require("simple-git/src/lib/tasks/clean");
 
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "Hola";
@@ -213,14 +214,22 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
+   return euro * 1.20
 
+  
 }
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
-  //Escribe tu código aquí
+  //Escribe tu código aquí 
+   if (letra.length !== 1) {
+     return "Dato incorrecto"
+   } 
+    if (letra === "a"|| letra === "e" || letra === "i" || letra === "o" || letra === "u" ) {
+      return "Es vocal"
+    } return "Dato incorrecto"
 }
 
 
